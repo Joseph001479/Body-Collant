@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EleganceBody - Body Collant Feminino Premium</title>
-    
-    <!-- Meta Pixel Code -->
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -22,7 +22,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -933,7 +933,6 @@ src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
                         <li><i class="fas fa-check"></i> Tecido com elastano para melhor ajuste</li>
                         <li><i class="fas fa-check"></i> Entrega Premium Grátis</li>
                     </ul>
-                    </ul>
                     
                     <div class="price-container">
                         <span class="current-price">R$ 74,90</span>
@@ -962,6 +961,12 @@ src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
                     </div>
                     
                     <a href="https://pay.comprasmarketplace.com/checkout/9edd2da9-c8c0-41f1-b818-115dfcebcc85" class="btn">Comprar Agora</a>
+                    <script>
+document.querySelector('.btn').addEventListener('click', () => {
+    fbq('track', 'Purchase', {value: 74.90, currency: 'BRL'});
+});
+</script>
+
                 </div>
             </div>
         </div>
@@ -1040,11 +1045,10 @@ src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="comprar">
+     <section class="cta" id="comprar">
         <div class="container cta-content">
             <h2>Pronta para Elevar seu Estilo?</h2>
             <p>Junte-se a milhares de mulheres que já descobriram o body perfeito para compor looks incríveis com conforto e elegância.</p>
-            <a href="https://pay.comprasmarketplace.com/checkout/9edd2da9-c8c0-41f1-b818-115dfcebcc85" class="btn">Comprar Agora</a>
             
             <div class="guarantee">
                 <i class="fas fa-shield-alt"></i>
@@ -1117,27 +1121,27 @@ src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Fechar menu mobile se estiver aberto
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-                    }
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Fechar menu mobile se estiver aberto
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
             });
-        });
+        }
+    });
+});
         
         // Seleção de cor
         document.querySelectorAll('.color').forEach(color => {
@@ -1161,7 +1165,12 @@ src="https://www.facebook.com/tr?id=2793234487549434&ev=PageView&noscript=1"
         });
     </script>
 </body>
+<script>
+window.onload = () => {
+    document.querySelector('.btn').addEventListener('click', () => {
+        fbq('track', 'Purchase', {value: 74.90, currency: 'BRL'});
+    });
+};
+</script>
 
 </html>
-
-
