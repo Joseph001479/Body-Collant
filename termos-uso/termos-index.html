@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - EleganceBody</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d8a7b1;
+            --primary-dark: #b86b84;
+            --secondary: #efdcd3;
+            --dark: #3c3c3c;
+            --light: #f8f4f4;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --gray: #7a7a7a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--gold);
+        }
+        
+        /* Conteúdo */
+        .terms-content {
+            padding: 80px 0;
+        }
+        
+        .terms-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .terms-header h1 {
+            font-size: 2.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+        
+        .last-update {
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        .terms-section {
+            margin-bottom: 40px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .terms-section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        .terms-section p, .terms-section ul {
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+        
+        .terms-section ul {
+            padding-left: 20px;
+        }
+        
+        .terms-section li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #fff6f8;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+            margin: 20px 0;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .back-button i {
+            margin-right: 10px;
+        }
+        
+        .back-button:hover {
+            color: var(--primary-dark);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--primary-light);
+            font-size: 1.2rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-light);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .terms-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .terms-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo"><i class="fas fa-crown"></i> EleganceBody</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <section class="terms-content">
+        <div class="container">
+            <div class="terms-header">
+                <h1>Termos de Uso</h1>
+                <p class="last-update">Última atualização: 10 de Novembro de 2023</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>1. Aceitação dos Termos</h2>
+                <p>Ao acessar e utilizar o site da EleganceBody, você concorda com estes Termos de Uso e com nossa Política de Privacidade. Se você não concordar com estes termos, por favor, não utilize nosso site.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>2. Serviços Oferecidos</h2>
+                <p>A EleganceBody atua no comércio eletrônico de roupas, especificamente na venda de bodies femininos, através do site www.elegancebody.com.br.</p>
+                <p>Nosso site permite:</p>
+                <ul>
+                    <li>Visualização de produtos</li>
+                    <li>Seleção de cores e tamanhos</li>
+                    <li>Adição de produtos ao carrinho</li>
+                    <li>Processo de checkout e pagamento</li>
+                    <li>Acompanhamento de pedidos</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h2>3. Cadastro do Usuário</h2>
+                <p>Para realizar compras, o usuário deverá criar uma conta fornecendo:</p>
+                <ul>
+                    <li>Nome completo</li>
+                    <li>Endereço de e-mail válido</li>
+                    <li>Senha de acesso</li>
+                    <li>Dados de endereçamento para entrega</li>
+                </ul>
+                <p>O usuário é responsável pela confidencialidade de sua senha e por todas as atividades que ocorrerem em sua conta.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>4. Preços e Pagamento</h2>
+                <p>Os preços dos produtos são exibidos em Reais (BRL) e incluem todos os impostos.</p>
+                <p>Formas de pagamento aceitas:</p>
+                <ul>
+                    <li>Cartão de crédito (em até 12x)</li>
+                    <li>Cartão de débito</li>
+                    <li>PIX</li>
+                    <li>Boleto bancário</li>
+                </ul>
+                <div class="highlight">
+                    <p><strong>Importante:</strong> O pedido só será processado após a confirmação do pagamento.</p>
+                </div>
+            </div>
+            
+            <div class="terms-section">
+                <h2>5. Entrega e Frete</h2>
+                <p>Entregamos para todo o Brasil através dos Correios e transportadoras.</p>
+                <p>O prazo de entrega varia conforme a localidade e modalidade de frete escolhida.</p>
+                <p>O valor do frete é calculado com base no peso, dimensões do produto e local de entrega.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>6. Trocas e Devoluções</h2>
+                <p>As trocas e devoluções são regidas pela Lei do Consumidor (Lei nº 8.078/90) e por nossa política específica:</p>
+                <ul>
+                    <li>Prazo de 30 dias para solicitação de troca ou devolução</li>
+                    <li>Produto deve estar em perfeito estado, com etiqueta e embalagem original</li>
+                    <li>O custo do frete para devolução é por conta do cliente</li>
+                    <li>Reembolsos são processados em até 10 dias úteis</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h2>7. Propriedade Intelectual</h2>
+                <p>Todo o conteúdo do site, incluindo textos, gráficos, logos, imagens, e software, é propriedade da EleganceBody ou de seus licenciadores e está protegido por leis de direitos autorais.</p>
+                <p>É expressamente proibida a reprodução, distribuição ou modificação do conteúdo sem autorização prévia por escrito.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>8. Limitação de Responsabilidade</h2>
+                <p>A EleganceBody não se responsabiliza por:</p>
+                <ul>
+                    <li>Danos decorrentes de uso inadequado dos produtos</li>
+                    <li>Atrasos na entrega causados pelos correios ou transportadoras</li>
+                    <li>Problemas técnicos temporários no site</li>
+                    <li>Conteúdo de sites de terceiros linkados ao nosso site</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h2>9. Alterações nos Termos</h2>
+                <p>Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. Alterações significativas serão comunicadas por e-mail ou através de aviso em nosso site.</p>
+                <p>O uso continuado do site após alterações constitui aceitação dos novos termos.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>10. Lei Aplicável e Foro</h2>
+                <p>Estes Termos são regidos pelas leis brasileiras. Qualquer disputa será resolvida no foro da comarca de São Paulo/SP, com exclusão de qualquer outro, por mais privilegiado que seja.</p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>11. Contato</h2>
+                <p>Para dúvidas sobre estes Termos de Uso:</p>
+                <p><strong>E-mail:</strong> juridico@elegancebody.com.br</p>
+                <p><strong>Telefone:</strong> (83) 9 9692-4986</p>
+                <p><strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP</p>
+            </div>
+            
+            <a href="../index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Voltar para a página inicial
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EleganceBody</h3>
+                    <p>Roupas que valorizam a autoestima feminina com elegância e conforto.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: contato@elegancebody.com.br</p>
+                    <p>WhatsApp: (83) 9 9692-4986</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="../politica-privacidade/index.html">Política de Privacidade</a>
+                    <a href="index.html">Termos de Uso</a>
+                    <a href="../trocas-devolucoes/index.html">Trocas e Devoluções</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 EleganceBody - Todos os direitos reservados. CNPJ: 12.345.678/0001-99</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
